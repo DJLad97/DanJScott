@@ -1,12 +1,13 @@
 @import "../sass/materialize.scss";
 
-h1, h2 {
-  @extend .grey-text, .text-darken-3;
-  //font-size: 3.0vw !important;
+@mixin nav-icon-spacing($marginRight) {
+  margin: 10px $marginRight 10px 10px;
 }
 
-.header-img {
-  height: 50%;
+$dark-white: #e5e5e5;
+
+h1, h2 {
+  @extend .grey-text, .text-darken-3;
 }
 
 .text{
@@ -15,4 +16,49 @@ h1, h2 {
 
 .parallax-container {
     height: 700px;
+}
+
+/*.nav-icon-spacing {
+  margin: 10px 10px 10px 10px;
+}*/
+
+.nav-list {
+  color: $dark-white;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 240px;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  #about-me{
+    @include nav-icon-spacing(40px);
+  }
+
+  #portfolio{
+    @include nav-icon-spacing(40px);
+  }
+
+  #blog{
+    @include nav-icon-spacing(40px);
+  }
+
+  #contact-me{
+    @include nav-icon-spacing(-40px);
+  }
+
+  .caption{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-list{
+    display: none;
+  }
 }
