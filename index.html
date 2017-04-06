@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+
   <!-- <script src="https://use.fontawesome.com/1a6d4ae9a2.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+  
   <script src="js/main.js"></script>
   <script src="js/materialize.min.js"></script>
   <link rel="stylesheet" href="css/main.min.css">
@@ -18,14 +18,37 @@
 <body>
   <header>
     <div class="parallax-container">
-     <div class="parallax"><img src="images/peaks-3 (fade).jpg"></div>
+      <div class="container nav-list">
+        <ul>
+          <li id="about-me">
+            <img src="images/about-me-icon.png" id="about-me" width="128" height="128" alt="image not found">
+            <span class="caption">About Me</span>
+          </li>
+          <li id="portfolio">
+              <img src="images/portfolio-icon-white.png" width="128" height="128" alt="image not found">
+              <span class="caption">Portfolio</span>
+          </li>
+          <li id="blog">
+            <img src="images/blog-icon.png" width="128" height="128" alt="image not found">
+            <span class="caption">Blog</span>
+          </li>
+          <li id="contact-me">
+            <img src="images/contact-me-icon.png" width="128" height="128" alt="image not found">
+            <span class="caption">Contact</span>
+          </li>
+        </ul>
+      </div>
+     <div class="parallax">
+       <img src="images/peaks-3 (fade).jpg">
+     </div>
    </div>
   </header>
 
   <div class="section blue-grey lighten-5">
     <div class="row container">
       <h2 class="header">Dan Scott website currently in dev</h2>
-      <p class="grey-text text-darken-3 lighten-3 text">Parallax is an effect where the background content or image in this case,
+      <!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+      <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case,
          is moved at a different speed than the foreground content while scrolling.</p>
       <h1>HELLO WORLD!! test2</h1>
       <button class="btn">BUTTON</button>
