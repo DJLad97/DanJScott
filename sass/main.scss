@@ -1,7 +1,38 @@
 @import "../sass/materialize.scss";
 
+@font-face {
+  font-family: headingFont;
+  // src: url('../fonts/system_san_francisco_display_thin-webfont.woff2') format('woff2'),
+  //      url('../fonts/system_san_francisco_display_thin-webfont.woff') format('woff');
+  src: url('../fonts/Philosopher-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: textFont;
+  // src: url('../fonts/system_san_francisco_display_thin-webfont.woff2') format('woff2'),
+  //      url('../fonts/system_san_francisco_display_thin-webfont.woff') format('woff');
+  src: url('../fonts/OpenSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 @mixin nav-icon-spacing($marginRight) {
   margin: 10px $marginRight 10px 10px;
+}
+
+@keyframes fade
+{
+    from { top: 10px; opacity: 0; }
+    to   { top: 0px; opacity: 1; }
+}
+
+@keyframes fadeSec
+{
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 $dark-white: #e5e5e5;
@@ -9,9 +40,10 @@ $primary-color-dark:   #455A64;
 $primary-color:        #607D8B;
 $primary-color-light:  #CFD8DC;
 $primary-color-text:   #FFFFFF;
+$primary-heading-text: #EEEEEE;
 $accent-color:         #D3531A;
 $link-color:           #F99157;
-$primary-text-color:   #212121;
+$primary-text-color:   #424242;
 $secondary-text-color: #757575;
 $divider-color:        #BDBDBD;
 
@@ -26,23 +58,81 @@ $primary-text-color:   #212121
 $secondary-text-color: #757575
 $divider-color:        #BDBDBD*/
 
+html{
+  //font-family: mainFont !important;
+}
+.dim-page{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color:#000000;
+  opacity:0.8;
+  z-index:1001;
+}
+.title {
+  position: relative;
+  animation: .5s .25s fade backwards ease-out;
+  font-size: 70px;
+  padding-top: 30px;
+  /* margin-top: 4px; */
+  text-align: center;
+  color: $primary-heading-text;
+  /* color: #607D8B; */
+}
+
+@media screen and (max-width: 991px){
+  .title{
+    padding-top: 100px;
+  }
+  .break{
+    display: block;
+  }
+}
+
+.subtitle {
+    position: relative;
+    animation: .5s .5s fade backwards ease-out;
+    font-size: 30px;
+    font-family: textFont;
+    color: $primary-heading-text;
+    text-align: center;
+}
 
 h1, h2 {
-  @extend .grey-text, .text-darken-3;
+  font-family: headingFont;
 }
 
 button:focus{
   background-color: rgba(133, 37, 115, 0) !important;
 }
 
+p {
+  font-family: textFont;
+  font-size: 18px;
+  color: $primary-text-color;
+}
 .text{
-  font-size: 1.5rem;
+  //font-size: 1.5rem;
+}
+
+.section-header{
+  color: $primary-color-dark;
 }
 
 .parallax-container {
     height: 700px;
 }
 
+.border{
+  border-left: 3px solid $accent-color;
+  padding-left: 25px;
+}
+
+.active{
+  border-bottom: 3px solid $accent-color;
+}
 .navbar-img{
   position: relative;
 }
@@ -84,13 +174,15 @@ button:focus{
 }
 
 .nav-list {
+  font-family: textFont;
+  font-size: 20px;
   ul {
     position: relative;
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
-    top: 240px;
+    top: 35px;
   }
 
   li {
@@ -99,13 +191,13 @@ button:focus{
   }
 
   li a {
-    color: $primary-color-text;
+    //color: $primary-color-text;
+    @extend .grey-text, .text-lighten-4;
   }
 
-  li a.active{
-    border-bottom: 1px solid $accent-color;
-
-  }
+  /*li a.active{
+    border-bottom: 3px solid $accent-color;
+  }*/
 
   #about-me {
     @include nav-icon-spacing(40px);
