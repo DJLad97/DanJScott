@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <!-- <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta http-equiv="cleartype" content="on">
@@ -17,7 +17,6 @@
 
   <link rel="android-touch-icon" sizes="120x120" href="icons/android-icon-120x120.png" />
   <link rel="android-touch-icon" sizes="152x152" href="icons/android-icon-152x152.png" />
-  <!-- <script src="https://use.fontawesome.com/1a6d4ae9a2.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
 
@@ -25,12 +24,14 @@
   <script src="js/materialize.min.js"></script>
   <link rel="stylesheet" href="css/main.min.css">
   <link rel="stylesheet" href="css/materialize.min.css">
-  <link rel="stylesheet" href="css/slideout.css">
+  <link rel="stylesheet" href="css/slideout.css"> -->
+  <?php include('includes/head.php'); ?>
   <title>About :: Dan Scott</title>
 </head>
 <body>
+  <?php include('includes/sidenav.php'); ?>
 
-  <div id="menu" class="grey lighten-3">
+  <!-- <div id="menu" class="grey lighten-3">
     <h2>Menu</h2>
     <ul>
       <li class="sidenav-item">
@@ -58,7 +59,7 @@
         </a>
       </li>
     </ul>
-  </div>
+  </div> -->
 
   <main id="panel">
     <button class="toggle-button slideout-btn">
@@ -69,7 +70,9 @@
       </div>
     </button>
     <div class="parallax-container">
-      <div class="container nav-list">
+      <?php include('includes/navbar.php'); ?>
+
+      <!-- <div class="container nav-list">
         <ul>
           <li id="about-me">
             <a href="index.html" class="box active">
@@ -96,7 +99,7 @@
             </a>
           </li>
         </ul>
-      </div>
+      </div> -->
      <div class="parallax">
        <img src="images/peaks-3 (fade).jpg">
      </div>
