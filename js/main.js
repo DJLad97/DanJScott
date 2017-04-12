@@ -27,12 +27,12 @@ $(document).ready(function(){
 	});
 
   if($('html').hasClass('slideout-open')){
-    alert('sidenav opened');
     $('body').addClass('dim-page')
   }
 
   // Add the active class to the navbar item's page
   // I.e if on contact, put active on the contact me navbar list item
+  // This only works if the user is on index.php (change this in the 1&1 control panel)
   var url = window.location.pathname,
        urlRegExp = new RegExp(url.replace(/\/$/,'') + "$"); // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
        // now grab every link from the navigation
@@ -42,5 +42,7 @@ $(document).ready(function(){
                $(this).addClass('active');
            }
        });
+
+
 
 });
