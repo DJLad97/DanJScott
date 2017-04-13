@@ -1,7 +1,7 @@
     <div class="container nav-list">
       <ul>
         <li id="about-me">
-          <a href="/index" class="box">
+          <a href="/" class="box active">
             <img src="images/about-me-icon.png" class="about-me-img" width="128" height="128" alt="image not found">
             <span class="caption">About Me</span>
           </a>
