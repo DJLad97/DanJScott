@@ -8,14 +8,34 @@
 }
 
 .sidenav-caption {
-    position: relative;
-    top: -19px;
-    left: 15px;
-    font-size: 13px;
+  position: relative;
+  top: -19px;
+  left: 45px;
+  font-size: 13px;
+  color: #424242;
 }
 
-.sidenav-item{
+/*.sidenav-item{
   padding-left: 10px;
+  padding-bottom: 15px;
+  border-top: 1px solid rgba(211, 83, 26, 0.70);
+}*/
+
+/*ul#sidenav {
+  border: 1px solid grey;
+}
+
+li.sidenav-item{
+  border-bottom: 1px dotted grey;
+}
+
+li.sidenav-item{
+  border:none;
+}*/
+
+#sidenav{
+  padding-top: 10%;
+  /*padding-left: 17%;*/
 }
 @media screen and (max-width: 991px){
   .slideout-btn{
