@@ -1,4 +1,5 @@
     <div id="menu" class="grey lighten-3">
+      <h1 id="sidenav-heading">Menu</h1>
       <ul id="sidenav">
         <li class="sidenav-item">
           <a href="index.php">
