@@ -7,7 +7,7 @@
   display: none;
 }
 
-.sidenav-caption {
+/*.sidenav-caption {
   position: relative;
   top: -19px;
   left: 45px;
@@ -33,10 +33,13 @@ li.sidenav-item{
   border:none;
 }*/
 
-#sidenav{
-  padding-top: 10%;
-  /*padding-left: 17%;*/
+/*#sidenav{
+  padding-top: 40%;
 }
+
+#sidenav-heading{
+
+}*/
 @media screen and (max-width: 991px){
   .slideout-btn{
     display: block;
