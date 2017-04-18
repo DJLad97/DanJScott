@@ -59,6 +59,10 @@ $primary-text-color:   #212121
 $secondary-text-color: #757575
 $divider-color:        #BDBDBD*/
 
+::selection{
+  background: $accent-color;
+  color: $primary-heading-text;
+}
 html{
   //font-family: mainFont !important;
 }
@@ -105,9 +109,11 @@ h1, h2 {
   font-family: headingFont;
 }
 
-button:focus{
-  background-color: rgba(133, 37, 115, 0) !important;
+button.slideout-btn:focus{
+  background-color: rgba(255, 255, 255, 0) !important;
+  outline: 0;
 }
+
 
 p {
   font-family: textFont;
@@ -133,13 +139,32 @@ p {
 
 .active{
   border-bottom: 3px solid $accent-color;
+  // display: inline-block;
+	// position: relative;
+	// padding-bottom: 0px;
 }
+
+/*.active:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+.active::after {
+	width: 100%;
+	background: $accent-color;
+}*/
 .navbar-img{
   position: relative;
 }
 
 .about-me-img {
   @extend .navbar-img;
+  // padding-top: 10px;
 }
 
 .portfolio {
@@ -160,11 +185,11 @@ p {
 
 .sidenav-item{
   padding-left: 10px;
-  border-top: 1px solid rgba(66, 66, 66, 0.70);
+  border-top: 1px solid rgba(66, 66, 66, 0.50);
 }
 
 .sidenav-item:last-child{
-  border-bottom: 1px solid rgba(66, 66, 66, 0.70);
+  border-bottom: 1px solid rgba(66, 66, 66, 0.50);
 }
 
 .about-me-sidenav {
@@ -192,7 +217,9 @@ p {
     margin: 0;
     padding: 0;
     text-align: center;
-    top: 35px;
+    //top: 35px;
+    padding-top: 35px;
+
   }
 
   li {
@@ -231,7 +258,42 @@ p {
 }
 
 @media screen and (max-width: 991px) {
-  .nav-list{
+  .nav-list {
     display: none;
   }
+}
+
+.sidenav-caption {
+  position: relative;
+  top: -19px;
+  left: 45px;
+  font-size: 13px;
+  color: #424242;
+}
+
+#sidenav {
+  padding-top: 10%;
+}
+
+#sidenav-heading {
+  text-align: center;
+  color: $primary-color-dark;
+}
+
+.circular-landscape {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.circular-landscape img{
+  width: auto;
+  height: 100%;
+  margin-left: -70px;
+}
+#profile-img{
+  // padding-left: 40%;
+  // padding-top: 2%;
 }
