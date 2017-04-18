@@ -22,6 +22,9 @@
 
     <script src="js/main.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script src="js/animsition.min.js"></script>
+
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/slideout.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
