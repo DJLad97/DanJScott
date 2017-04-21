@@ -96,8 +96,8 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
                   </div>
                   <h5 class="center">Software Engineering Student</h5>
                   <p class="icon-block-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum felis, efficitur ac auctor ut,
-                    ultricies egestas lectus. Fusce eget fringilla urna. Cras pharetra, nisl et venenatis facilisis,
+                    I'm currently enrolled at Sheffield Hallam University; studying towards a
+                    bachelor's degree in Software Engineering.
                   </p>
                 </div>
               </div>
@@ -108,8 +108,9 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
                   </div>
                   <h5 class="center">Looking for placement</h5>
                   <p class="icon-block-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum felis, efficitur ac auctor ut,
-                    ultricies egestas lectus. Fusce eget fringilla urna. Cras pharetra, nisl et venenatis facilisis,
+                    As part of my course, we required to undertake a placement year in industry.
+                    I'm still on the hunt for a placement so if you like what you see here don't
+                    hesitate to <a href="contact-me.php">Contact Me.</a>
                   </p>
                 </div>
               </div>
@@ -122,8 +123,10 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
                   </div>
                   <h5 class="center">Music</h5>
                   <p class="icon-block-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum felis, efficitur ac auctor ut,
-                    ultricies egestas lectus. Fusce eget fringilla urna. Cras pharetra, nisl et venenatis facilisis,
+                    If I weren't pursuing a career in the software engineering industry,
+                    I'd probably be looking for a career in music as it's also quite a passion of mine.
+                    I play the guitar, banjo and drums; if you're looking to form a bluegrass or need a member,
+                    give me a shout.
                   </p>
                 </div>
               </div>
@@ -134,8 +137,10 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
                   </div>
                   <h5 class="center">Star Wars Nerd</h5>
                   <p class="icon-block-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum felis, efficitur ac auctor ut,
-                    ultricies egestas lectus. Fusce eget fringilla urna. Cras pharetra, nisl et venenatis facilisis,
+                    I absolutely Star Wars! But what might shock is, unlike most Star Wars nerds, the
+                    fascination didn't start when I was a kid but when I was 17! After watching EP IV I was hooked,
+                    and now I've watched the movies too many times, read book after book (and comics) and amassed a collection
+                    of LEGO and figurines.
                   </p>
                 </div>
               </div>
@@ -145,10 +150,11 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
                     <i class="fa fa-tree icon" aria-hidden="true"></i>
                     <!-- <img src="images/mountain-icon.png" width="128" height="128" alt=""> -->
                   </div>
-                  <h5 class="center">ECA</h5>
+                  <h5 class="center">Hobbies</h5>
                   <p class="icon-block-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum felis, efficitur ac auctor ut,
-                    ultricies egestas lectus. Fusce eget fringilla urna. Cras pharetra, nisl et venenatis facilisis,
+                    Two of my main hobbies revolve around the mountain (hence the tree).
+                    They are mountain biking and hiking, both of which I started in university and
+                    thoroughly enjoying. (Also know archery and snowboarding)
                   </p>
                 </div>
               </div>
