@@ -29,7 +29,7 @@ $(document).ready(function(){
     lazyLoadBuffer: 0,
   });
 
- $('.modal').modal();
+ $('.modal').modal(); 
 
   var slideout = new Slideout({
      'panel': document.getElementById('panel'),
