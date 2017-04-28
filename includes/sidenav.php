@@ -20,7 +20,7 @@
           </a>
         </li>
         <li class="sidenav-item">
-          <a href="contact-me.php">
+          <a href="contact.php">
             <img src="images/contact-me-icon-blue.png" class="contact-me-sidenav" width="48" height="48" alt="image not found">
             <span class="sidenav-caption">Contact</span>
           </a>
