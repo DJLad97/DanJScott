@@ -19,7 +19,7 @@
           </a>
         </li>
         <li id="contact-me">
-          <a href="contact-me.php">
+          <a id="mail" onclick="return false;" class="mail-link" href="mailto:dj-scott1@hotmail.co.uk">
             <img src="images/contact-me-icon.png" class="contact-me" width="128" height="128" alt="image not found">
             <span class="caption">Contact</span>
           </a>
