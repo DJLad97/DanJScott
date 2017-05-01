@@ -28,10 +28,10 @@
 <html lang="en">
 <head>
   <?php include('includes/head.php'); ?>
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.5/jquery.jcarousel.js"></script>
   <title>Portfolio :: Dan Scott</title>
 </head>
 <body>
@@ -41,31 +41,35 @@
     $projImgQuery->execute();
 
     $imgResult = $projImgQuery->fetchObject();
-    $extraImages = explode(',',  $imgResult->ProjExtraImgs);
+
     ?>
     <div id="<?php echo $result->ProjID?>" class="modal">
       <div class="modal-content">
-        <div class="container slick-carousel">
-          <!-- <div>
-            <img src="images/comp-project2.png" alt="">
+        <?php
+
+        if($imgResult->ProjExtraImgs != NULL){
+          $extraImages = explode(',',  $imgResult->ProjExtraImgs); ?>
+          <div class="container">
+            <div class="slider">
+              <ul class="slides">
+                <?php
+
+                // if($imgResult->ProjExtraImgs != NULL){
+                //   $extraImages = explode(',',  $imgResult->ProjExtraImgs);
+
+                  for($i = 0; $i < count($extraImages); $i++){
+                    ?>
+                    <li class="carousel-item">
+                      <img src="images/<?php echo $extraImages[$i]; ?>" width="640" height="360" alt="">
+                    </li>
+
+                    <?php
+                  }
+                ?>
+              </ul>
+            </div>
           </div>
-          <div>
-            <img src="images/comp-project3.png" alt="">
-          </div> -->
-          <?php
-          if($projImgQuery->rowCount() > 0){
-            for($i = 0; $i < count($extraImages); $i++){
-              ?>
-              <div>
-                <img src="images/<?php echo $extraImages[$i]; ?>" width="640" height="360" alt="">
-              </div>
-
-            <?php
-            }
-          }
-          ?>
-        </div>
-
+          <?php } ?>
         <h4><?php echo $result->ProjName?></h4>
         <p><?php echo $result->ProjDesc?></p>
       </div>
@@ -85,16 +89,16 @@
       <?php include('includes/navbar.php'); ?>
 
      <div class="parallax">
-       <img src="images/peaks-3 (fade).jpg">
+       <img src="images/portfolio-bg-image.png">
      </div>
     </div>
 
     <div class="section grey lighten-3">
       <div class="container">
         <div class="row">
-          <h1 class="section-header" id="web-header">
+          <h1 class="projects-header" id="web-header">
             Web Projects&nbsp;<span class="num-projects">(<?php echo $numWebProjects; ?>)</span>
-            <i class="fa fa-angle-down fa-lg indicator" aria-hidden="true"></i>
+            <i class="fa fa-angle-up fa-lg indicator" aria-hidden="true"></i>
           </h1>
             <div id="web-projects">
               <?php
@@ -125,9 +129,9 @@
         </div>
         <hr class="colored-border">
         <div class="row">
-          <h1 class="section-header" id="game-header">
+          <h1 class="projects-header" id="game-header">
             Games&nbsp;<span class="num-projects">(<?php echo $numGameProjects; ?>)</span>
-            <i class="fa fa-angle-down fa-lg indicator" aria-hidden="true"></i>
+            <i class="fa fa-angle-up fa-lg indicator" aria-hidden="true"></i>
           </h1>
             <div id="game-projects">
               <?php
@@ -147,7 +151,6 @@
                       </div>
                       <div class="card-content">
                         <p class="card-desc">
-                          <!-- A gamesite where you can view and sign up to MTB and Road races. -->
                           <?php echo $gameResult->ProjMiniDesc; ?>
                         </p>
                       </div>
@@ -164,9 +167,9 @@
         </div>
       </div>
     </div>
-    <div class="parallax-container">
+    <!-- <div class="parallax-container">
       <div class="parallax"><img src="images/peak-dist (fade).jpg"></div>
-    </div>
+    </div> -->
     <?php include('includes/footer.php'); ?>
 
   </main>
