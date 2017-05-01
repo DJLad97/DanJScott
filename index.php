@@ -9,7 +9,6 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://use.fontawesome.com/1a6d4ae9a2.js"></script>
     <?php include('includes/head.php'); ?>
     <title>About :: Dan Scott</title>
   </head>
@@ -27,7 +26,7 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
         <?php include('includes/navbar.php'); ?>
 
        <div class="parallax">
-         <img src="images/peaks-3 (fade).jpg">
+         <img src="images/peak-dist-4 (fade).png">
        </div>
       </div>
 
@@ -37,10 +36,14 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
           <div class="border">
             <h2 class="section-header">Welcome</h2>
             <!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-            <p>Welcome to my website, as you can see this is currently in development. I have a temporary website that I could show,
-              however it's not really representative of my current skill and I wouldn't feel right showing it off
+            <p>Welcome to my website, I'm currently a Software Engineering student at
+              <a href="https://www.shu.ac.uk/">Sheffield Hallam University</a>.
               <br>
-              After doing a web development module at university, I've sinced gained a great interest in the subject and I'm now working on my skills to help me become a career web developer.
+              After doing a web development module during my second, I've sinced gained a great interest in the subject;
+              I'm now working on my skills to help me become a career web developer.
+              <br>
+              <br>
+              <a href="blog.php">Check what I've been up to!</a>
             </p>
           </div>
           <!-- <h1>HELLO WORLD!! test2</h1>
@@ -59,16 +62,6 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
               <img src="images/me.jpg" alt="profile image">
             </div>
           </div>
-          <div class="desc">
-            <p class="border">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum felis, efficitur ac auctor ut,
-              ultricies egestas lectus. Fusce eget fringilla urna. Cras pharetra, nisl et venenatis facilisis,
-              purus eros ullamcorper nunc, ut aliquam orci ipsum in purus. Integer molestie diam nec tellus viverra fermentum.
-              Nunc bibendum felis ante, condimentum lacinia nulla egestas quis. In feugiat dolor a massa blandit molestie.
-              Vivamus sollicitudin massa ut lobortis vestibulum. Etiam a purus dignissim, vehicula libero vel, blandit lorem.
-              Suspendisse luctus blandit ligula vel eleifend. Ut ac urna libero. Aenean semper mollis augue, ut tempus nulla malesuada tempus.
-            </p>
-          </div>
 
           <!-- <br>
           <br> -->
@@ -84,7 +77,7 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
                   <h5 class="center">Aspiring Web Dev</h5>
                   <p class="icon-block-text">
                       Right now I'm aiming to improve my skills & understanding of web development,
-                      my skills currently consist of basics: HTML, CSS, Bootstrap, JavaScript/jQuery & PHP.
+                      my skills currently consist of basics: HTML, CSS, Bootstrap, JavaScript/jQuery, PHP & AJAX.
                       I also have experience in working with databases - MySQL and Oralce.
                   </p>
                 </div>
@@ -164,22 +157,24 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
         </div>
       </div>
 
+
       <div class="parallax-container">
-       <div class="parallax"><img src="images/peaks-1 (fade).jpg"></div>
+         <div class="parallax"><img src="images/peak-dist-1 (fade).jpg"></div>
       </div>
+      <?php include('includes/footer.php'); ?>
     </main>
     <script>
-    var slideout = new Slideout({
-       'panel': document.getElementById('panel'),
-       'menu': document.getElementById('menu'),
-       'padding': 256,
-       'tolerance': 70
-     });
-     $('.toggle-button').on('click', function() {
-      slideout.toggle();
-    });
+      var slideout = new Slideout({
+         'panel': document.getElementById('panel'),
+         'menu': document.getElementById('menu'),
+         'padding': 256,
+         'tolerance': 70
+       });
+       $('.toggle-button').on('click', function() {
+        slideout.toggle();
+      });
 
-    slideout.enableTouch();
+      slideout.enableTouch();
     </script>
   </body>
 </html>
