@@ -199,11 +199,9 @@ p {
 
 .sidenav-item{
   padding-left: 10px;
-  border-top: 1px solid rgba(66, 66, 66, 0.50);
 }
 
 .sidenav-item:last-child{
-  border-bottom: 1px solid rgba(66, 66, 66, 0.50);
 }
 
 .about-me-sidenav {
@@ -225,14 +223,12 @@ p {
 .nav-list {
   font-family: textFont;
   font-size: 20px;
-  
   .active{
     border-bottom: 3px solid $accent-color;
     // display: inline-block;
   	// position: relative;
   	// padding-bottom: 0px;
   }
-
   ul {
     position: relative;
     list-style-type: none;
@@ -363,7 +359,7 @@ p {
 
 footer {
   background-color: $primary-color-dark;
-  height: 155px;
+  height: 216px;
 }
 
 .footer-headings {
@@ -371,7 +367,7 @@ footer {
 }
 
 #recent-blog-posts {
-  color: $accent-color;
+  padding-right: 10px;
 }
 
 .footer-icon {
@@ -420,8 +416,10 @@ footer {
 
 .projects-header{
   @extend .section-header;
-  border-bottom: 1px solid rgba($accent-color, 0.52);
-  width: 100%;
+}
+
+.projects-header:hover{
+  cursor:pointer;
 }
 
 .colored-border{
@@ -445,6 +443,7 @@ footer {
 }
 
 .indicator.down{
+  transform-origin: 50% 50%;
   -moz-transform:rotate(180deg);
   -webkit-transform:rotate(180deg);
   transform:rotate(180deg);
