@@ -18,18 +18,9 @@ $(document).ready(function(){
       e.preventDefault();
     })
   }
+  $('.slider').slider();
 
-  $('.slick-carousel').slick({
-    dots: true,
-    infinite: true,
-    // fade: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    lazyLoad: 'ondemand',
-    lazyLoadBuffer: 0,
-  });
-
- $('.modal').modal(); 
+ $('.modal').modal();
 
   var slideout = new Slideout({
      'panel': document.getElementById('panel'),
@@ -72,9 +63,13 @@ $(document).ready(function(){
        if(urlRegExp.test(this.href.replace(/\/$/,''))){
            $(this).addClass('active');
        }
+
+       if(window.location.pathname == 'blog-post.php?PostID=8'){
+         $(this).addClass('active');
+       }
    });
 
-   $('.section-header').on('click', function(){
+   $('.projects-header').on('click', function(){
      $(this).next().slideToggle('slow');
      $(this).find('i:last').toggleClass('down');
 
