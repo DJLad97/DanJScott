@@ -13,7 +13,7 @@
           </a>
         </li>
         <li id="blog">
-          <a href="blog.php">
+          <a href="blog.php" id="blog-link">
             <img src="images/blog-icon.png" class="blog" width="120" height="120" alt="image not found">
             <span class="caption">Blog</span>
           </a>
