@@ -89,7 +89,7 @@ z-index: 2;*/
 }
 
 #nav-icon1 {
-  width: 60px;
+  width: 40px;
   height: 45px;
   position: relative;
   margin: 50px auto;
@@ -108,7 +108,7 @@ z-index: 2;*/
   height: 4px;
   width: 70%;
   background: #D3531A;
-  border-radius: 9px;
+  /* border-radius: 9px; */
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -124,11 +124,11 @@ z-index: 2;*/
 }
 
 #nav-icon1 span:nth-child(2) {
-  top: 18px;
+  top: 10px;
 }
 
 #nav-icon1 span:nth-child(3) {
-  top: 36px;
+  top: 20px;
 }
 
 #nav-icon1.open span:nth-child(1) {
