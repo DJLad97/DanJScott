@@ -1,3 +1,13 @@
+<?php
+  require('conn.inc.php');
+
+  $blogQuery = "SELECT PostID, PostTitle FROM Blog_Post ORDER BY PostDate DESC LIMIT 3";
+  // $blogQuery = "SELECT PostID, PostTitle FROM Blog_Post WHERE PostID = 20";
+
+  $stmt = $pdo->prepare($blogQuery);
+  $stmt->execute();
+?>
+
 <footer>
   <div class="section container">
     <div class="row">
@@ -11,12 +21,26 @@
       </div>
       <div class="col m3"></div> -->
       <div class="col m2"></div>
-      <div class="col m4">
+      <div class="col s12 m4">
         <h5 class="footer-headings">Recent Blog Posts</h5>
-        <a href="">STAND IN BLOG</a>
+        <?php
+        if($stmt->rowCount() > 0){
+          while($result = $stmt->fetchObject()){
+            echo $result->BlogTitle;
+            ?>
+            <a href="blog.php?BlogID=<?php echo $result->PostID; ?>" id="recent-blog-posts"><?php echo $result->PostTitle; ?></a>
+
+          <?php
+          }
+        }
+        else{ ?>
+            <a>NO RECENT BLOGS</a>
+        <?php
+        }
+        ?>
       </div>
       <div class="col m2"></div>
-      <div class="col m4">
+      <div class="col s12 m4">
         <h5 class="footer-headings">Social</h5>
         <h5>
           <a href="https://twitter.com/Dan_Scott_"><i class="fa fa-twitter footer-icon" aria-hidden="true"></i></a>
