@@ -16,7 +16,7 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
     <?php include('includes/sidenav.php'); ?>
 
     <main id="panel">
-      <?php include('includes/slideout-button.php'); ?>
+      <?php include('includes/slideout-button.php');?>
       <div class="parallax-container">
         <!-- grey-text text-lighten-4 -->
         <h1 class="title">Dan Scott</h1>
