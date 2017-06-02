@@ -84,7 +84,7 @@
       <!-- grey-text text-lighten-4 -->
       <h1 class="title">Portfolio</h1>
        <!-- grey-text text-lighten-3 -->
-      <h2 class="subtitle">&nbsp;</h2>
+      <h2 class="subtitle">Here you'll find out what I've been working on.</h2>
 
       <?php include('includes/navbar.php'); ?>
 
