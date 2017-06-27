@@ -19,7 +19,7 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
       <?php include('includes/slideout-button.php');?>
       <div class="parallax-container">
         <!-- grey-text text-lighten-4 -->
-        <h1 class="title">Dan Scott test</h1>
+        <h1 class="title">Dan Scott</h1>
          <!-- grey-text text-lighten-3 -->
         <h2 class="subtitle">Software Engineering Student <span class="break">@ Sheffield Hallam University</span></h2>
 
