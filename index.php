@@ -1,16 +1,9 @@
-<?php
-if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
-    $redirect = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . 'index.php';
-    header('HTTP/1.1 301 Moved Permanently');
-    header('Location: ' . $redirect);
-    exit();
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <?php include('includes/head.php'); ?>
     <title>About :: Dan Scott</title>
+    <!-- <meta http-equiv="refresh" content="0;url=https://danjscott.co.uk/index.php" /> -->
   </head>
   <body>
     <?php include('includes/sidenav.php'); ?>
@@ -26,7 +19,7 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
         <?php include('includes/navbar.php'); ?>
 
        <div class="parallax">
-         <img src="images/peak-dist-4 (fade).png">
+         <img src="images/lysefjord.png">
        </div>
       </div>
 
@@ -36,8 +29,8 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
           <div class="border">
             <h2 class="section-header">Welcome</h2>
             <!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-            <p>Welcome to my website, I'm currently a Software Engineering student at
-              <a href="https://www.shu.ac.uk/">Sheffield Hallam University</a>.
+            <p>Welcome to my website, I'm currently on placement as a Junior Web Dev at
+              <a href="http://www.dmri.co.uk/">DMRi</a>.
               <br>
               After doing a web development module during my second, I've sinced gained a great interest in the subject;
               I'm now working on my skills to help me become a career web developer.
@@ -51,7 +44,7 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
         </div>
       </div>
       <div class="parallax-container">
-        <div class="parallax"><img src="images/peak-dist (fade).jpg"></div>
+        <div class="parallax"><img src="images/lysefjord-fra-prkst.png"></div>
       </div>
 
       <div class="section grey lighten-3">
@@ -59,7 +52,7 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
           <!-- <h2 class="section-header">Who Am I?</h2> -->
           <div id="profile-img">
             <div class="circular-landscape">
-              <img src="images/me.jpg" alt="profile image">
+              <img src="images/me.jpg?2" alt="profile image">
             </div>
           </div>
 
@@ -77,8 +70,8 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
                   <h5 class="center">Aspiring Web Dev</h5>
                   <p class="icon-block-text">
                       Right now I'm aiming to improve my skills & understanding of web development,
-                      my skills currently consist of basics: HTML, CSS, Bootstrap, JavaScript/jQuery, PHP & AJAX.
-                      I also have experience in working with databases - MySQL and Oralce.
+                      my skills currently consist of basics: HTML, CSS, Bootstrap, JavaScript/jQuery, PHP (Laravel).
+                      I also have experience working with MySQL databases.
                   </p>
                 </div>
               </div>
@@ -87,7 +80,7 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
                   <div class="center">
                     <i class="fa fa-university icon" aria-hidden="true"></i>
                   </div>
-                  <h5 class="center">Software Engineering Student</h5>
+                  <h5 class="center">Software Eng. Student</h5>
                   <p class="icon-block-text">
                     I'm currently enrolled at Sheffield Hallam University; studying towards a
                     bachelor's degree in Software Engineering.
@@ -99,11 +92,11 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
                   <div class="center">
                     <i class="fa fa-building icon" aria-hidden="true"></i>
                   </div>
-                  <h5 class="center">Looking for placement</h5>
+                  <h5 class="center">Junior Web Developer</h5>
                   <p class="icon-block-text">
-                    As part of my course, we required to undertake a placement year in industry.
-                    I'm still on the hunt for a placement so if you like what you see here don't
-                    hesitate to <a href="contact-me.php">Contact Me.</a>
+                    After some stressful months I finally managed to procure my placement year as a web developer
+                    at <a href="http://www.dmri.co.uk/">DMRi.</a> Where I'll be working with the usual web technologies
+                    and PHP (with Laravel and Yii). <a href="blog.php">Check my blog to see what I'm up to there</a>
                   </p>
                 </div>
               </div>
@@ -126,28 +119,14 @@ if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
               <div class="col s12 m4">
                 <div class="icon-block">
                   <div class="center">
-                    <i class="fa fa-rebel icon" aria-hidden="true"></i>
-                  </div>
-                  <h5 class="center">Star Wars Nerd</h5>
-                  <p class="icon-block-text">
-                    I absolutely Star Wars! But what might shock is, unlike most Star Wars nerds, the
-                    fascination didn't start when I was a kid but when I was 17! After watching EP IV I was hooked,
-                    and now I've watched the movies too many times, read book after book (and comics) and amassed a collection
-                    of LEGO and figurines.
-                  </p>
-                </div>
-              </div>
-              <div class="col s12 m4">
-                <div class="icon-block">
-                  <div class="center">
                     <i class="fa fa-tree icon" aria-hidden="true"></i>
                     <!-- <img src="images/mountain-icon.png" width="128" height="128" alt=""> -->
                   </div>
                   <h5 class="center">Hobbies</h5>
                   <p class="icon-block-text">
-                    Two of my main hobbies revolve around the mountain (hence the tree).
+                    Two of my main hobbies revolve around the mountain
                     They are mountain biking and hiking, both of which I started in university and
-                    thoroughly enjoying. (Also know archery and snowboarding)
+                    thoroughly enjoying.
                   </p>
                 </div>
               </div>
